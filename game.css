@@ -1,5 +1,27 @@
+body {
+  background-color: black;
+  margin: 0px;
+}
+
+.game-title {
+  height: 150px;
+  background-color: magenta;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gamebtn {
+  margin: 5px;
+}
+
+
 #game {
   border: 1px dashed;
   margin: auto;
   display: block;
+  border-color: #FFFFFF;
 }
