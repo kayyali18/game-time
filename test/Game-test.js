@@ -23,6 +23,7 @@ describe('Game', () => {
   it('should be able to move', () => {})
   it('should be able to changeDirection', () => {})
 })
+})
 
  // describe('Block', () => {
  //  it('Should instantiate a new Block object',() => {
