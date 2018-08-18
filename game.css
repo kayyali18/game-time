@@ -3,6 +3,11 @@ body {
   margin: 0px;
 }
 
+.canvas-background {
+  margin-left: 665px;
+  right: 100px;
+}
+
 .game-title {
   height: 150px;
   background-color: magenta;
@@ -20,6 +25,8 @@ body {
 
 
 #game {
+  position: absolute;
+  left: 665px;
   border: 1px dashed;
   margin: auto;
   display: block;
