@@ -1,5 +1,6 @@
 const { assert } = require('chai');
 const Frog = require('../lib/Frog.js')
+const GamePiece = require('../lib/GamePiece.js')
 
 describe('Frog', () => {
   let frog;
@@ -23,4 +24,54 @@ describe('Frog', () => {
       dyv: 1,
     })
   })
+
+
+  it('should collide with a block', () => {
+    const gamepiece = new GamePiece(250, 470, 10, 10,'green', 0, 0, 'white');  
+    const colliding = frog.isCollidingWith(gamepiece);
+
+
+
+    assert.isTrue(colliding)
+  })
+
+
+
+  it('should be able to move position on the canvas', () => {
+    let frog2 = new Frog(240, 470, 10, 10, 'cornflowerblue', 0, 0, 'White')
+    console.log(frog2);
+    const moved = frog2.changeDirection(frog2);
+    console.log(moved);
+
+
+
+
+
+
+    assert.isTrue(moved);
+
+  })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
