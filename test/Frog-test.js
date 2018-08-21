@@ -12,7 +12,7 @@ describe('Frog', () => {
 
   it('should take properties', () => {
     assert.deepEqual(frog, {
-      x:250,
+      x: 250,
       y: 470,
       height: 10,
       width: 10,
