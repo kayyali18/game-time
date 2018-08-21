@@ -5,7 +5,7 @@ describe('GamePiece', () => {
   let gamepiece;
 
   beforeEach(() => {
-    gamepiece = new GamePiece(30, 30, 10, 10, 'green')
+    gamepiece = new GamePiece(30, 30, 10, 10, 'green', 1, 1)
   })
 
   it('should take properties', () => {
@@ -25,7 +25,7 @@ describe('GamePiece', () => {
   })
 
   it('should collide with a second gamepiece that occupies the same space', () => {
-    const gamepiece2 = new GamePiece(30, 30, 10, 10, 'green')
+    const gamepiece2 = new GamePiece(30, 30, 10, 10, 1, 1, 'green')
 
     // Execution
     const colliding = gamepiece.isCollidingWith(gamepiece2);
@@ -35,7 +35,7 @@ describe('GamePiece', () => {
   })
 
   it('should not collide with a second gamepiece that does not occupy the same space', () => {
-    const gamepiece2 = new GamePiece(130, 130, 10, 10, 'green')
+    const gamepiece2 = new GamePiece(130, 130, 10, 10, 1, 1, 'green')
 
     // Execution
     const colliding = gamepiece.isCollidingWith(gamepiece2);
