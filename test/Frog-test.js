@@ -1,5 +1,6 @@
 const { assert } = require('chai');
 const Frog = require('../lib/Frog.js')
+const GamePiece = require('../lib/GamePiece.js')
 
 describe('Frog', () => {
   let frog;
@@ -22,5 +23,15 @@ describe('Frog', () => {
       dxv: 0,
       dyv: 1,
     })
+  })
+
+
+  it('should collide with a block', () => {
+    const gamepiece = new GamePiece(250, 470, 10, 10,'green', 0, 0, 'white');  
+    const colliding = frog.isCollidingWith(gamepiece);
+
+
+
+    assert.isTrue(colliding)
   })
 })
