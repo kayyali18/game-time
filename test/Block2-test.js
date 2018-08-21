@@ -29,6 +29,18 @@ describe('Block2', () => {
   })
 
 
+  it('should collide with frog', () => {
+    const frog = new Frog(550, 75, 10, 10, 'cornflowerblue', 0, 0, 'White');
+    const colliding = frog.isCollidingWith(block2);
+    
+
+    assert.isTrue(colliding);
+  })
+
+
+
+
+
 
 
 })
